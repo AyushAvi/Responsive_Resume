@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: #311E25;
+}
+
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 40px 70px;
+}
+
+.topBar img{
+    width: auto;    
+    height: 50px;
+}
+
+.nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav ul li{
+    padding: 5px 30px;
+}
+
+
+.nav a{
+    color: #D38A59;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-bottom: 0px solid #D38A59;
+}
+
+.nav a:hover{
+    border-bottom: 2px solid #D38A59;
+}
+
+
+.cta{
+    padding: 15px 30px;
+    border: 2px solid #D38A59;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #D38A59;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    margin: 7px;
+    height: 3px;
+    background-color: #D38A59;
+    color: #D38A59;
+}
+
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image img{
+    width: 40vh;
+}
+
+.heading{
+    font-size: 6vh;
+    padding: 20px 0;
+    color: rgb(214, 214, 214);
+}
+
+.paragraph{
+    color: #D38A59;
+    font-size: 3vh;
+}
+
+.cta-home{
+    position: absolute; 
+    padding: 15px 30px;
+    border: 2px solid #D38A59;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #D38A59;
+    margin: 60px 0;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+    padding: 40px 0px 70px 0px; 
+}
+
+.about-head{
+    text-align: center;
+    margin: 0px; 
+    background-color: wheat;
+}
+
+.about-head h1{
+    color: #311E25;
+    text-transform: uppercase;
+    margin: 90px 0 10px 0;
+    font-size: 7vh;
+    background-color: wheat;
+}
+
+.about-head p{
+    color: #311E25;
+    font-size: 3vh;
+    letter-spacing: 1px;
+    background-color: wheat;  
+    margin: 0px 0px 20px 0;  
+}
+
+.about-section{
+    display: flex;
+    background-color: wheat;
+    margin: 0px 30px;
+    flex-wrap: wrap;
+
+}
+
+.about-part{
+    margin: 20px 60px;
+    background-color: wheat;
+}
+
+.about-part h2, .about-part p, .about-part img{
+    background-color: wheat;
+    padding: 5px;
+}
+
+.about-section h2{
+    text-transform: uppercase;
+    color: #311E25;
+    font-weight: 800;
+}
+
+.about-section p, .works p{
+    letter-spacing: .5px;
+}
+
+.about-section img{
+    width: 70px;
+}
+
+.works{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+    align-items: center;
+}
+
+.works div{
+    width: 300px;
+    height: 150px;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+.works div, .works h2, .works p{
+    background-color: wheat;
+}
+
+.works h2{
+    text-transform: uppercase;
+    color: #311E25;
+    margin: 0 0 20px 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 40px;
+}
+
+.contact, .contact div, .contact p, .contact img, .contact h2{
+    background-color: wheat;
+}
+
+.contact-head{
+    text-align: center;
+}
+
+.contact-head h2{
+    text-transform: uppercase;
+    font-size: 7vh;
+    color: #311E25;
+    font-weight: 700;
+}
+
+.contact-head p{
+    color: #311E25;
+    font-size: 3vh;
+    letter-spacing: 1px; 
+    margin: 0px 0px 20px 0; 
+}
+
+.contact-detail{
+    margin: 40px 20px;
+    padding: 50px 10px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.contact-detail div{
+    margin: 30px 130px;
+}
+
+.contact-detail p{
+    font-size: 3vh;
+    text-align: center;
+    color: #311E25;
+}
+
+.contact-detail img{
+    width: 70px;
+    margin: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .nav ul li{
+        padding: 5px 10px;
+    }
+
+    .cta{
+        padding: 15px 10px;
+    }
+
+    .topBar{
+        padding: 40px 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav{
+        display: none;
+    }
+
+    .nav-active{
+        display: flex;
+    }
+
+    .nav ul{    
+        flex-direction: column;
+        position: absolute;
+        display: inline;
+        top: 200px;
+        right: 15%;
+    }
+
+    .nav li{
+        margin: 50px;
+        
+    }
+
+    .cta{
+        display: none;
+        position: absolute;
+        right: 25%;
+        bottom: 50px;
+    }
+
+    .cta-active{
+        display: flex;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .image{
+        margin-top: 70px;
+    }
+
+    .image img{
+        width: 30vh;
+        margin-top: 40px;
+    }
+
+    .cta-home{
+        position: relative;
+        top: 10vh;
+    }
+
+    
+}
